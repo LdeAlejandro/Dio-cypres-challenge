@@ -3,6 +3,7 @@ const elementHeader = require('../superiorMenu/elements').ELEMENTS;
 
 class home{
 
+    
     accessLoginPage(){
         
         cy.contains(element.loginAccessLinkText)
@@ -11,7 +12,7 @@ class home{
     }
 
     accessHomePage(){
-        cy.visit('/');
+        cy.visit('https://conduit-realworld-example-app.fly.dev/');
     }
 
     acessNewArticlePage(){

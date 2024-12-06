@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+///*<reference types="Cypress" />
 import home from '../home/index';
 import login from './index';
 import register from '../signUp/index';

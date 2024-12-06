@@ -27,11 +27,12 @@ class register{
     }
 
     fillRegisterForm(name, email, password){
+        console.log(name, email, password)
         cy.get(element.nameInput)
             .type(name)
             .should('have.attr', 'required');
 
-        cy.get(element.emailInput)
+        cy.get(element.emailInput )
             .type(email)
             .should('have.attr', 'type', 'email')
             .and('have.attr', 'required');
